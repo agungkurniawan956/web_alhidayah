@@ -5,52 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ponpes Al-Hidayah</title>
+  <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="libraries/Bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-top rounded-bottom">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-          <img src="images/logo.png" alt="Logo Al-Hidayah" width="50" height="50" >
-          Al-HIDAYAH
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Administrasi
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Berita</a></li>
-                <li><a class="dropdown-item" href="#">PPDB 2O23/2O24</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Informasi
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/Berita.html">Berita Pesantren</a></li>
-                <li><a class="dropdown-item" href="#">Agenda Pesantren</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Kontak</a>
-            </li>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-top rounded-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="images/logo.png" alt="Logo Al-Hidayah" width="50" height="50" >
+      Al-HIDAYAH
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse fw-bold" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Administrasi
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Berita</a></li>
+            <li><a class="dropdown-item" href="#">PPDB 2O23/2O24</a></li>
           </ul>
-        </div>
-      </div>
-    </nav>
-  <!-- end navbar -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Informasi
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/Berita.html">Berita Pesantren</a></li>
+            <li><a class="dropdown-item" href="#">Agenda Pesantren</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end navbar -->
 
   <!-- header -->
   <section class="section-banner">
@@ -124,17 +125,17 @@
       </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center g-4 pb-3">
         <div class="col">
-          <div class="card h-100 shadow-md bg-light shadow-md">
-            <div class="card-berita-image card-img-top shadow-sm" style="background-image: url('images/osis.jpg');"></div>
+          <div class="card h-100 shadow-md bg-light shadow">
+            <div class="card-berita-image card-img-top" style="background-image: url('images/osis.jpg');"></div>
             <div class="card-body">
               <h5 class="card-berita-title card-title">Title hear</h5>
               <p class="card-berita-caption card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nobis odio!</p>
-              <a href="#" class="btn btn-primary">Read more.. </a>
+              <a href="/DetailBerita.html" class="btn btn-primary">Read more.. </a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 bg-light shadow-md">
+          <div class="card h-100 bg-light shadow">
             <div class="card-berita-image card-img-top" style="background-image: url('images/futsal\ \(1\).jpg');"></div>
             <div class="card-body">
               <h5 class="card-title">Title</h5>
@@ -143,7 +144,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 bg-light shadow-md">
+          <div class="card h-100 bg-light shadow">
             <div class="card-berita-image card-img-top" style="background-image: url('images/tapaksuci.jpg');"></div>
             <div class="card-body">
               <h5 class="card-title">Title</h5>
@@ -317,7 +318,7 @@
             Contact us
           </h5>
           <p>
-            <a href="" class="footer-link" style="text-decoration:none;">home</a>
+            <a href="" class="footer-link" style="text-decoration:none;">Home</a>
           </p>
           <p>
             <a href="" class="footer-link" style="text-decoration:none;">Administrasi</a>
@@ -340,7 +341,7 @@
             <a href="" class="footer-link" style="text-decoration: none;"><i class="fa-solid fa-envelope"></i> alhidayahpanongan@gmail.com</a>
           </p>
           <p>
-            <a href="" class="footer-link" style="text-decoration: none;"><i class="fa-solid fa-phone"></i> +62 8952749257</a>
+            <a href="https://api.whatsapp.com/send?phone=62895630388324" class="footer-link" style="text-decoration: none;"><i class="fa-solid fa-phone"></i> +62 895630388324</a>
           </p>
         </div>
       </div>
