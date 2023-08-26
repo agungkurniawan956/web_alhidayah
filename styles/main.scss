@@ -1,32 +1,104 @@
-.section-banner{
-  .carousel-inner{
-    .carousel-item{
+$chateau-green-50: #f2fbf3;
+$chateau-green-100: #e0f8e3;
+$chateau-green-200: #c2f0c8;
+$chateau-green-300: #92e39e;
+$chateau-green-400: #5bcd6d;
+$chateau-green-500: #35b249;
+$chateau-green-600: #269337;
+$chateau-green-700: #21742f;
+$chateau-green-800: #1f5c29;
+$chateau-green-900: #1b4c25;
+$chateau-green-950: #0a2911;
+
+:root {
+  --green-50: #{$chateau-green-50};
+  --green-100: #{$chateau-green-100};
+  --green-200: #{$chateau-green-200};
+  --green-300: #{$chateau-green-300};
+  --green-400: #{$chateau-green-400};
+  --primary: #{$chateau-green-500};
+  --green-600: #{$chateau-green-600};
+  --green-700: #{$chateau-green-700};
+  --green-800: #{$chateau-green-800};
+  --green-900: #{$chateau-green-900};
+  --green-950: #{$chateau-green-950};
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+
+  &:hover {
+    background-color: var(--green-400);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.navbar {
+  .nav-item {
+    .active {
+      color: var(--primary);
+    }
+  }
+  .btn-login {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+
+    &:hover {
+      color: #ffff;
+      background-color: var(--primary);
+    }
+  }
+}
+
+.section-banner {
+  .carousel-inner {
+    .carousel-item {
       background-size: cover;
       min-height: 599px;
     }
   }
 }
-.berita-pesantren{
-  background-color: #e2e4f7;
-  .card-berita-image{
+.berita-pesantren {
+  background-color: var(--green-100);
+  .card-berita-image {
+    background-size: cover;
+    background-color: rgb(230, 230, 230);
+    min-height: 187px;
+  }
+  // .btn-primary {
+  //   background-color: var(--primary);
+  //   border: none;
+
+  //   &:hover {
+  //     background-color: var(--green-400);
+  //   }
+
+  //   &:focus {
+  //     box-shadow: none;
+  //   }
+  // }
+}
+
+.agenda-pesantren {
+  background-color: var(--green-100);
+  .card-img-agenda {
     background-size: cover;
     background-color: rgb(230, 230, 230);
     min-height: 187px;
   }
 }
 
-.agenda-pesantren{
-  background-color: #e2e4f7;
-  .card-img-agenda{
-    background-size: cover;
-    background-color: rgb(230, 230, 230);
-    min-height: 187px;
-  }
-}
-
-.section-galeri-popular{
-  .section-galeri-content{
-    .card-galeri{
+.section-galeri-popular {
+  .section-galeri-content {
+    .card-galeri {
       min-height: 229px;
       background-color: rgb(253, 0, 0);
       background-size: cover;
@@ -36,41 +108,41 @@
   }
 }
 
-.section-footer{
-  a{
+.section-footer {
+  a {
     color: rgb(233, 233, 233);
     text-decoration: none;
-    & :hover{
+    & :hover {
       text-decoration: underline;
       color: white;
     }
   }
 }
 
-.footer-link{
+.footer-link {
   color: #ffff;
-  & :hover{
+  & :hover {
     color: blue;
   }
 }
 
-.konten-berita{
-  .thumb-post{
+.konten-berita {
+  .thumb-post {
     background-size: cover;
     background-color: #8f8f8f;
     min-height: 399px;
   }
 }
 
-.form-signin{
-  .form-floating{
-    z-index:2;
+.form-signin {
+  .form-floating {
+    z-index: 2;
     .input-email {
       margin-bottom: 1px;
       border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0; 
+      border-bottom-left-radius: 0;
     }
-    .input-password{
+    .input-password {
       margin-bottom: 10px;
       border-top-left-radius: 0;
       border-top-right-radius: 0;

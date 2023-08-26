@@ -1,10 +1,51 @@
+:root {
+  --green-50: #f2fbf3;
+  --green-100: #e0f8e3;
+  --green-200: #c2f0c8;
+  --green-300: #92e39e;
+  --green-400: #5bcd6d;
+  --primary: #35b249;
+  --green-600: #269337;
+  --green-700: #21742f;
+  --green-800: #1f5c29;
+  --green-900: #1b4c25;
+  --green-950: #0a2911;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: var(--green-400);
+}
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.navbar .nav-item .active {
+  color: var(--primary);
+}
+.navbar .btn-login {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+.navbar .btn-login:hover {
+  color: white;
+  background-color: var(--primary);
+}
+
 .section-banner .carousel-inner .carousel-item {
   background-size: cover;
   min-height: 599px;
 }
 
 .berita-pesantren {
-  background-color: #e2e4f7;
+  background-color: var(--green-100);
 }
 .berita-pesantren .card-berita-image {
   background-size: cover;
@@ -13,7 +54,7 @@
 }
 
 .agenda-pesantren {
-  background-color: #e2e4f7;
+  background-color: var(--green-100);
 }
 .agenda-pesantren .card-img-agenda {
   background-size: cover;
